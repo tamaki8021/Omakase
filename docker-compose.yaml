@@ -1,0 +1,11 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    volumes:
+      - ./backend/dockervenv:/backend/.venv
+      - ./backend:/backend
+    ports:
+      - 8000:8000  # ホストマシンのポート8000を、docker内のポート8000に接続する
