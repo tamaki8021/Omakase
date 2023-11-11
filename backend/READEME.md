@@ -47,4 +47,7 @@ $ pip3 freeze > requirements.txt
 
 # 一括インストール
 $ pip3 install -r requirements.txt
+
+# "backend" コンテナの中で "poetry add sqlalchemy aiomysql" を実行
+$ docker-compose exec backend poetry add sqlalchemy aiomysql
 ```
