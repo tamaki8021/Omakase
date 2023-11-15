@@ -50,4 +50,7 @@ $ pip3 install -r requirements.txt
 
 # "backend" コンテナの中で "poetry add sqlalchemy aiomysql" を実行
 $ docker-compose exec backend poetry add sqlalchemy aiomysql
+
+# alembicを初期化
+$ docker compose exec backend poetry run alembic init migrations
 ```
