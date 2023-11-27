@@ -53,4 +53,7 @@ $ docker-compose exec backend poetry add sqlalchemy aiomysql
 
 # alembicを初期化
 $ docker compose exec backend poetry run alembic init migrations
+
+# migration
+$ make migrate m="description of changes"
 ```
