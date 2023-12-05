@@ -3,7 +3,7 @@ from typing import Optional
 from pydantic import BaseModel, Field
 
 class TaskBase(BaseModel):
-    titlte: Optional[str] = Field(None, example="クリーニングを取りに行く")
+    title: Optional[str] = Field(None, example="クリーニングを取りに行く")
 
 class Task(TaskBase):
     id: int
