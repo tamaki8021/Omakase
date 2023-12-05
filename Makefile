@@ -12,6 +12,10 @@ migrate:
 upgrade:
 	docker compose exec backend poetry run alembic upgrade head
 
+# BEのテストを実行する
+be-test:
+	docker compose run --entrypoint "poetry run pytest --asyncio-mode=auto" backend
+
 # dockerのコンテナを立ち上げるコマンド
 up:
 	docker compose up -d
